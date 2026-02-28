@@ -20,6 +20,6 @@
       "*": ["*"]
     }
   },
-  "include": ["src/**/*", "config/**/*"],
+  "include": ["src/**/*", "config/**/*", "src/api/v1"],
   "exclude": ["node_modules", "dist", "test/**/*"]
 }
