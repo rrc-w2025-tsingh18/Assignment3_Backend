@@ -3,7 +3,7 @@ import * as eventController from "../controllers/eventController";
 import { validate } from "../middleware/validationMiddleware";
 import { createEventSchema } from "../validation/eventValidation";
 
-const router = Router();
+const router: Router = Router();
 
 router.post("/", validate(createEventSchema), eventController.createEvent);
 
