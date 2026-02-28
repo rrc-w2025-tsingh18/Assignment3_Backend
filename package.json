@@ -32,7 +32,7 @@
   "scripts": {
     "dev": "nodemon --exec node -r ts-node/register src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node dist/src/server.js",
     "test": "jest --runInBand"
   },
   "repository": {
