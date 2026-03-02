@@ -1,4 +1,9 @@
 name: TypeScript Lint and Reviewdog
+
+permissions:
+  contents: read
+  pull-requests: write
+  
 on:
     pull_request:
         branches:
