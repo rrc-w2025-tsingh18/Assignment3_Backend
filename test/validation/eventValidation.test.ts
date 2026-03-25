@@ -15,7 +15,7 @@ describe("Event Validation Schema", () => {
     const { error } = createEventSchema.validate({
       name: "ab",
       date: "2027-12-25T09:00:00.000Z",
-      capacity: 100
+      capacity: 100 
     });
 
     expect(error).toBeDefined();
