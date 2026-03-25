@@ -19,7 +19,14 @@ app.use(
   })
 );
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type"],
+  })
+);
+
 app.use(morgan("dev"));
 app.use(express.json());
 
