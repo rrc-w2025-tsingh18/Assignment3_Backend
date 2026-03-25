@@ -1,6 +1,9 @@
 import express, { Express } from "express";
+import dotenv from "dotenv";
 import cors from "cors";
 import morgan from "morgan";
+
+dotenv.config();
 
 import healthRoutes from "./api/v1/routes/healthRoutes";
 import eventRoutes from "./api/v1/routes/eventRoutes";
